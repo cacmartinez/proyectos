@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutPR"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/principal" >
+
+        <ImageButton
+            android:id="@+id/butPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/soccerballanimated"
+            android:contentDescription="@string/imgBut_jugar"
+            android:src="@drawable/soccerballanimated" />
+
+        <TextView
+            android:id="@+id/butPlayString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/butPlay"
+            android:layout_marginBottom="22dp"
+            android:layout_marginRight="16dp"
+            android:alpha="50"
+            android:ellipsize="middle"
+            android:text="@string/imgBut_jugar"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/ButsColors" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="27dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cookies" />
+
+    </RelativeLayout>
+
+</LinearLayout>
